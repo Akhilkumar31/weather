@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quick Weather</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Quick Weather</h1>
+      <div class="row">
+        <input id="cityInput" type="text" placeholder="Search city e.g. London" />
+        <button id="searchBtn" class="accent">Search</button>
+        <button id="geoBtn">Use my location</button>
+        <button id="unitBtn" class="toggle" title="Toggle °C/°F">°C / °F</button>
+      </div>
+      <div id="error" class="error" aria-live="polite"></div>
+
+      <div id="current" class="tile big" style="display:none;">
+        <img id="wIcon" class="icon" alt="" />
+        <div>
+          <div class="city" id="cityName"></div>
+          <div class="muted" id="desc"></div>
+          <div class="meta muted" id="meta"></div>
+        </div>
+        <div class="temp" id="temp" style="margin-left:auto;"></div>
+      </div>
+
+      <div class="muted section-title">3-Day Forecast</div>
+      <div id="forecast" class="grid"></div>
+
+      <div class="footer">
+        Data by <a href="https://openweathermap.org/" target="_blank" rel="noreferrer">OpenWeatherMap</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
