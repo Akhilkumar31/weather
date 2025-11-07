@@ -1,5 +1,5 @@
 // ==== CONFIG ====
-const API_KEY = "YOUR_API_KEY_HERE"; // <-- Replace with your OpenWeatherMap key
+const API_KEY = "da92414c68901c79e5d42f797d9b449d"; // <-- Replace with your OpenWeatherMap key
 // ===============
 
 const els = {
